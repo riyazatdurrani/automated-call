@@ -14,7 +14,7 @@ def test_openai_connection():
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "system", "content": "You are a helpful assistant, who is playing the role of the receptionist, answer to the questions from the user regading appointments  and give response as if you are the real person attending the client.give price in rupees if asked for price"},
                 {"role": "user", "content": "Say hello!"}
             ],
             max_tokens=50
